@@ -1,0 +1,308 @@
+/* Feuille de style pour version mobile */
+
+/* Font/Police/Variables */
+:root {
+    font-size: 10px;
+    --blue: #0065fc;
+    --lightblue: #deebff;
+    --lightgrey: #f2f2f2;
+    --grey: #a9a9a9;
+    --white: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("font/Raleway-Regular.ttf");
+    font-style: normal;
+}
+body {
+    font-family: "Raleway";
+    font-size: 1.4rem;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* what affects the full site */
+ul > li {
+    list-style-type: none;
+}
+a:link {
+    text-decoration: none;
+}
+i.item-category {
+    border: 1px solid #deebff;
+    border-radius: 50%;
+    background-color: var(--lightblue);
+    color: var(--blue);
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+/* Header */
+header > a > img {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+/* Navigation */
+header {
+    position: relative;
+}
+nav > ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+}
+nav > ul > li {
+    min-width: 50%;
+    padding: 1rem 0;
+}
+nav > ul > li:first-child {
+    border-bottom: 0.5rem solid var(--blue);
+    padding: 1rem;
+}
+nav > ul > li:first-child > a {
+    color: var(--blue);
+}
+nav > ul > li:nth-child(2) {
+    border-bottom: 0.5rem solid var(--lightgrey);
+    padding: 1rem;
+}
+nav > ul > li:nth-child(2) > a {
+    color: black;
+}
+#register {
+    color: var(--blue);
+    position: absolute;
+    top: 3rem;
+    right: 1.5rem;
+    min-width: auto;
+    display: inline;
+    padding: 0;
+}
+
+/* Form */
+form {
+    padding: 0 1.5rem;
+}
+/* Search */
+#search {
+    border: 1px solid var(--lightgrey);
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+i.item-map {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: var(--lightgrey);
+    border-radius: 1rem 0 0 1rem;
+}
+#ville {
+    border: none;
+}
+#search > button {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: var(--blue);
+    border-radius: 1rem;
+    margin: -1px -1px 0 0;
+    border: none;
+    float: right;
+}
+i.item-search {
+    color: white;
+}
+span#btn-search {
+    display: none;
+}
+
+/* Information */
+i.item-info {
+    color: var(--blue);
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+    width: 2.2rem;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+p#text {
+    width: calc(100% - 3.2rem);
+}
+
+/* Filtres */
+main > form > #filtres > button {
+    border: 1px solid var(--lightgrey);
+    border-left: none;
+    border-radius: 20px;
+    background-color: var(--white);
+    padding: 0;
+}
+main > form > #filtres > #economic {
+    padding-right: 1rem;
+}
+main > form > #filtres > #familial {
+    padding-right: 1rem;
+    margin-left: 1rem;
+}
+main > form > #filtres > #romantic {
+    padding-right: 1rem;
+    margin-top: 1rem;
+}
+main > form > #filtres > #animals {
+    padding-right: 1rem;
+    margin-top: 1rem;
+    display: block;
+}
+
+form #informations {
+    display: flex;
+}
+
+/* Main  hebergements populaires et activités*/
+a {
+    display: block;
+}
+a > figure > img {
+    width: 100%;
+    object-fit: cover;
+}
+a > figure > figcaption {
+    position: relative;
+}
+a > figure > figcaption > div.star {
+    position: absolute;
+    bottom: 0.5rem;
+}
+#grid1 {
+    display: flex;
+    flex-direction: column;
+}
+#grid1 > #hebergements {
+    order: 2;
+}
+div#grid1 > #populaires {
+    order: 1;
+}
+i.item-star-primary {
+    color: var(--blue);
+}
+i.item-star-secondary {
+    color: var(--grey);
+}
+
+/* les plus populaire */
+#populaires {
+    position: relative;
+    padding: 1.5rem;
+}
+i.stastistics {
+    position: absolute;
+    top: 2.7rem;
+    right: 2.5rem;
+}
+#populaires {
+    background-color: var(--lightgrey);
+}
+#populaires > a > figure {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    box-shadow: 0px 0.5rem 0.5rem var(--grey);
+    border-radius: 2rem;
+    background-color: white;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+#populaires > a > figure > img {
+    border-radius: 2.2rem 0 0 2.2rem;
+    padding: 0.5rem;
+    height: 14rem;
+}
+#populaires > a > figure > figcaption {
+    padding: 1rem;
+    color: black;
+}
+#populaires > a > figure > figcaption > h4 {
+    margin: 0;
+}
+/* Hébergements à Marseille */
+#hebergements {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+}
+#hebergements > #grid2 > a > figure {
+    box-shadow: 0px 0.5rem 0.5rem var(--grey);
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+#hebergements > #grid2 > a > figure > img {
+    height: 13rem;
+    border-radius: 2.2rem 2.2rem 0 0;
+    padding: 0.5rem;
+}
+#hebergements > #grid2 > a > figure > figcaption {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: black;
+}
+#hebergements > #grid2 > a > figure > figcaption > h4 {
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+}
+#hebergements > #grid2 > a > figure > figcaption > p {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0 0 1rem 0;
+}
+#hebergements > a > h3 {
+    color: black;
+}
+
+/* activités à Marseille */
+#activites {
+    padding: 0 1.5rem;
+}
+#activites > a > figure {
+    margin: 2rem 0;
+    box-shadow: 0px 0.5rem 0.5rem var(--grey);
+    border-radius: 2rem;
+}
+#activites > a > figure > img {
+    height: 13rem;
+    border-radius: 2.2rem 2.2rem 0 0;
+    padding: 0.5rem;
+}
+#activites > a > figure > figcaption {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    color: black;
+}
+#activites > a > figure > figcaption > h4 {
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+}
+
+/* Footer */
+footer {
+    padding: 1.5rem 2.5rem;
+    background-color: var(--lightgrey);
+}
+footer > ul {
+    padding: 0;
+}
+footer > ul > li > a {
+    color: black;
+}

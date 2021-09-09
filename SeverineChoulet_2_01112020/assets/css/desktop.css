@@ -1,0 +1,207 @@
+/* feuille de style pour desktop */
+
+/* Header */
+header {
+    margin-bottom: 2rem;
+}
+nav {
+    position: absolute;
+    top: -14px;
+    right: 120px;
+}
+nav > ul {
+    text-align: inherit;
+}
+nav > ul > li {
+    min-width: inherit;
+}
+nav > ul > li:first-child {
+    border-bottom: inherit;
+    border-top: 2px solid var(--blue);
+    padding: 1rem;
+    margin-right: 40px;
+}
+nav > ul > li:nth-child(2) {
+    border-bottom: inherit;
+    padding: 1.6rem;
+}
+#register {
+    top: 16px;
+}
+
+/* Recherche */
+#search {
+    width: 55%;
+}
+i.item-map {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+}
+#search > button {
+    width: 10rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 0 1rem 1rem 0;
+}
+i.item-search {
+    display: none;
+}
+span#btn-search {
+    display: inherit;
+    color: white;
+}
+
+/* Filtres */
+main > form > #filtres {
+    margin-top: 2rem;
+}
+main > form > #filtres > h4 {
+    display: inline-block;
+}
+main > form > #filtres > #economic {
+    margin-left: 1rem;
+}
+main > form > #filtres > #animals {
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+/* hébergements et populaires */
+#grid1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    padding: 2rem;
+    grid-gap: 2rem;
+}
+
+/* Hébergements */
+#hebergements {
+    margin: 0;
+}
+#hebergements > a:last-child {
+    padding: 3rem 1rem;
+}
+#grid1 > #hebergements {
+    order: 1;
+    background-color: var(--lightgrey);
+    border-radius: 2rem;
+    padding: 0 3rem;
+}
+#grid2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+#hebergements > #grid2 > a > figure {
+    display: inherit;
+    margin: 0;
+    background-color: var(--white);
+}
+
+/* Populaires */
+#grid1 > #populaires {
+    order: 2;
+    border-radius: 2rem;
+}
+#grid1 > #populaires > i.stastistics {
+    top: 1.7rem;
+}
+#grid1 > #populaires > h3 {
+    margin: 0;
+}
+#grid1 > #populaires > a > figure {
+    height: 25%;
+    margin-top: 2rem;
+    background-color: var(--white);
+}
+#grid1 > #populaires > a > figure > img {
+    height: 16rem;
+}
+
+/* Activités à Marseilles */
+
+#activites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30px 200px 60px 200px;
+    grid-template-areas:
+        "header header header header"
+        "card1 card2 card4 card5"
+        "card1 card2 card4 card6"
+        "card1 card3 card4 card6";
+    grid-gap: 2rem;
+    padding: 3rem 2rem 5rem 2rem;
+}
+#header {
+    grid-area: header;
+    margin: 0;
+}
+#card1 {
+    grid-area: card1;
+}
+#card2 {
+    grid-area: card2;
+}
+#card3 {
+    grid-area: card3;
+}
+#card4 {
+    grid-area: card4;
+}
+#card5 {
+    grid-area: card5;
+}
+#card6 {
+    grid-area: card6;
+}
+#activites > a {
+    height: 100%;
+}
+a > figure {
+    height: 100%;
+}
+aside#activites > a > figure > img {
+    height: calc(100% - 60px);
+    padding: 0;
+}
+#activites > a > figure > figcaption {
+    padding: 0.5rem 1.5rem;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 1.5rem;
+}
+#activites > a > figure > figcaption > h4 {
+    padding: 0;
+}
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header1 header2 header3"
+        "list1 list2 list3";
+    grid-gap: 1rem;
+}
+footer > h4:first-child {
+    grid-area: header1;
+}
+#header2 {
+    grid-area: header2;
+}
+#header3 {
+    grid-area: header3;
+}
+#list1 {
+    grid-area: list1;
+}
+#list2 {
+    grid-area: list2;
+}
+#list3 {
+    grid-area: list3;
+}

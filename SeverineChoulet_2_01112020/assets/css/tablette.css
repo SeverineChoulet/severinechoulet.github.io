@@ -1,0 +1,35 @@
+/* Feuille de style pour les tablette */
+
+/* Filtres */
+main > form > #filtres > #romantic {
+    margin-left: 1rem;
+}
+
+/* Les plus populaires */
+#populaires > a > figure {
+    height: 150px;
+}
+/* Feuille de style pour les tablette */
+
+/* Filtres */
+main > form > #filtres > #romantic {
+    margin-left: 1rem;
+}
+
+/* Hébergement à Marseille */
+#hebergements > #grid2 > a > figure {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto;
+    margin: 2rem 0;
+    box-shadow: 0px 0.5rem 0.5rem var(--grey);
+    border-radius: 2rem;
+}
+#hebergements > a > figure > img {
+    border-radius: 2.2rem 0 0 2.2rem;
+}
+
+/* Populaires */
+#populaires > a > figure > img {
+    height: 15rem;
+}
