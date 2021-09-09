@@ -1,0 +1,19 @@
+{
+    "name": "ohmyfood",
+    "version": "1.0.0",
+    "description": "Projet 3",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch assets/sass/main.scss:assets/css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gerkx/maintainable-css-with-sass.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gerkx/maintainable-css-with-sass/issues"
+    },
+    "homepage": "https://github.com/gerkx/maintainable-css-with-sass#readme"
+}

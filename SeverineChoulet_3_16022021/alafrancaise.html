@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Oh My Food</title>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrin-to-fit=no"
+        />
+        <link rel="stylesheet" type="text/css" href="assets/css/all.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="assets/css/normalize.css"
+        />
+        <!--<link rel="stylesheet" type="text/css" href="assets/css/style.css" />-->
+        <!--<link
+            rel="stylesheet"
+            type="text/css"
+            media="screen AND (min-width: 426px)"
+            href="assets/css/tablette.css"
+        />-->
+        <!--<link
+            rel="stylesheet"
+            type="text/css"
+            media="screen AND (min-width: 769px)"
+            href="assets/css/desktop.css"
+        />-->
+    </head>
+    <body>
+        <!-- header avec logo Oh My Food -->
+        <header>
+            <a href="index.html">
+                <h1>Ohmyfood</h1>
+            </a>
+        </header>
+
+        <main>
+            <!-- image du resto -->
+            <img
+                src="xassets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                alt="A la française"
+            />
+
+            <form>
+                <!-- nom plus coeur -->
+                <h2>A la française</h2>
+                <i class="far fa-heart"></i>
+
+                <!-- Section entrées -->
+                <section>
+                    <h3>Entrées</h3>
+
+                    <!-- Tartare de poulpe -->
+                    <input
+                        type="radio"
+                        id="entreeChoice1"
+                        name="entree"
+                        value="Tartare"
+                    />
+                    <label for="entreeChoice1">Tartare de poulpe acidulé</label>
+                    <p>Au zests d'orange</p>
+                    <p>25&euro;</p>
+
+                    <!-- velouté de légumes d'antan -->
+                    <input
+                        type="radio"
+                        id="entreeChoice2"
+                        name="entree"
+                        value="veloute"
+                    />
+                    <label for="entreeChoice2"
+                        >Velouté de légumes d'antan</label
+                    >
+                    <p>Carotte, panais, topinambour</p>
+                    <p>35&euro;</p>
+
+                    <!-- Soupe à l'oignon -->
+                    <input
+                        type="radio"
+                        id="entreeChoice3"
+                        name="entree"
+                        value="soupe"
+                    />
+                    <label for="entreeChoice3">Soupe à l'oignon</label>
+                    <p>Revisitée</p>
+                    <p>20&euro;</p>
+                </section>
+
+                <!-- Section des plats -->
+                <section>
+                    <h3>Plats</h3>
+
+                    <!-- Coquilles Saint-Jacques -->
+                    <input
+                        type="radio"
+                        id="dishChoice1"
+                        name="dish"
+                        value="coquille"
+                    />
+                    <label for="dishChoice1">Coquilles Saint-Jacques</label>
+                    <p>Accompagnées d'une purée de panais</p>
+                    <p>40&euro;</p>
+
+                    <!-- Magret de canard -->
+                    <input
+                        type="radio"
+                        id="dishChoice2"
+                        name="dish"
+                        value="magret"
+                    />
+                    <label for="dishChoice2">Magret de canard</label>
+                    <p>Et parmentier de pomme de terres</p>
+                    <p>35&euro;</p>
+
+                    <!-- Pigeonneau d'Ille-et-Vilaine -->
+                    <input
+                        type="radio"
+                        id="dishChoice3"
+                        name="dish"
+                        value="pigeonneau"
+                    />
+                    <label for="dishChoice3"
+                        >Pigeonneau d'Ille-et-Vilaine</label
+                    >
+                    <p>Sur son lit de gnocchis aux légumes</p>
+                    <p>44&euro;</p>
+                </section>
+
+                <!-- Section des desserts -->
+                <section>
+                    <h3>Desserts</h3>
+
+                    <!-- Pétales de violettes glacés -->
+                    <input
+                        type="radio"
+                        id="dessertChoice1"
+                        name="dessert"
+                        value="petales"
+                    />
+                    <label for="dessertChoice1"
+                        >Pétales de violettes glacés</label
+                    >
+                    <p>Et purée de noisettes</p>
+                    <p>18&euro;</p>
+
+                    <!-- Fondant au chocolat -->
+                    <input
+                        type="radio"
+                        id="dessertChoice2"
+                        name="dessert"
+                        value="fondant"
+                    />
+                    <label for="dessertChoice2">Fondant au chocolat</label>
+                    <p>Revisité</p>
+                    <p>22&euro;</p>
+
+                    <!-- Millefeuille croustillant -->
+                    <input
+                        type="radio"
+                        id="dessertChoice3"
+                        name="dessert"
+                        value="millefeuille"
+                    />
+                    <label for="dessertChoice3"
+                        >Millefeuille croustillant</label
+                    >
+                    <p>Myrtilles et pâte d'amande</p>
+                    <p>23&euro;</p>
+                </section>
+
+                <button>Commander</button>
+            </form>
+        </main>
+
+        <!-- Pied de page -->
+        <footer class="grid grid2">
+            <h4 class="header header2">Ohmyfood</h4>
+            <a href="#" class="link link1">
+                <p><i class="fas fa-utensils"></i> Proposer un restaurant</p>
+            </a>
+            <a href="" class="link link2">
+                <p><i class="fas fa-hands-helping"></i> Devenir partenaire</p>
+            </a>
+            <a href="#" class="link link3">
+                <p>Mentions légales</p>
+            </a>
+            <a href="#" class="link link4">
+                <p>Contact</p>
+            </a>
+        </footer>
+    </body>
+</html>

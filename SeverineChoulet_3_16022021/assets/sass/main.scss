@@ -1,0 +1,120 @@
+/* Importation des polices de caractères */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import "./tablette.scss";
+@import "./desktop.scss";
+@import "./variables.scss";
+
+/* feuille de style version mobile */
+/* page d'accueil */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+h1,
+h4 {
+    font-family: "Shrikhand";
+    font-style: normal;
+}
+h1 {
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* formulaire */
+form {
+    background-color: var(--lightgrey);
+    text-align: center;
+    label {
+        display: flex;
+        padding: 0 10rem 0 10rem;
+        background-color: var(--grey);
+        height: 3rem;
+        border-top: 0.5px solid var(--darkgrey);
+        .item-map {
+            line-height: 2.5rem;
+            padding-right: 1rem;
+        }
+        input {
+            border: none;
+            background-color: var(--grey);
+        }
+    }
+    h2 {
+        padding: 2.5rem 5.5rem 0 5.5rem;
+    }
+    p {
+        padding: 0 5.5rem 2.5rem 5.5rem;
+    }
+    button {
+        width: 15rem;
+        height: 3rem;
+        border-radius: 2rem;
+        border: none;
+        background: linear-gradient(var(--pink), 30%, var(--purple));
+        color: var(--white);
+        margin-bottom: 2.5rem;
+    }
+}
+
+/* Section fonctionnement */
+section {
+    ul {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: 60px 60px 60px;
+        li {
+            box-shadow: 0.5px 0.5rem 0.5rem black;
+            border-radius: 2rem;
+            /* margin-bottom: 2rem; */
+            line-height: 60px;
+            height: 100%;
+            padding: 0 20px;
+            background-color: var(--lightgrey);
+        }
+    }
+}
+
+/* Restaurants */
+article {
+    padding: 1rem;
+    a {
+        figure {
+            box-shadow: 0px 0.5rem 0.5rem black;
+            border-radius: 2rem;
+            margin-bottom: 2rem;
+            img {
+                position: relative;
+                width: 100%;
+                max-height: 193px;
+                object-fit: cover;
+                border-radius: 2.2rem 2.2rem 0 0;
+            }
+            figcaption {
+                position: relative;
+                padding: 1rem;
+                i {
+                    position: absolute;
+                    top: 10px;
+                    right: 12px;
+                }
+                p:last-child {
+                    position: absolute;
+                    top: -185px;
+                    right: 30px;
+                }
+            }
+        }
+    }
+}
+
+/* page des restaurants */

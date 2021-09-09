@@ -1,0 +1,57 @@
+/* Feuille de style pour la version desktop */
+body {
+  font-size: 1.5rem;
+}
+
+/* Fonctionnement */
+.grid0 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+}
+
+/* Restaurants */
+.grid1 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "header1 header1" "card1 card2" "card3 card4";
+}
+.grid1 .header1 {
+  grid-area: header1;
+}
+.grid1 .card1 {
+  grid-area: card1;
+}
+.grid1 .card2 {
+  grid-area: card2;
+}
+.grid1 .card3 {
+  grid-area: card3;
+}
+.grid1 .card4 {
+  grid-area: card4;
+}
+
+/* Pied de page */
+.grid2 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "header2 header2 header2 header2" "link1 link2 link3 link4";
+}
+.grid2 .header2 {
+  grid-area: header2;
+}
+.grid2 .link1 {
+  grid-area: link1;
+}
+.grid2 .link2 {
+  grid-area: link2;
+}
+.grid2 .link3 {
+  grid-area: link3;
+}
+.grid2 .link4 {
+  grid-area: link4;
+}
+
+/*# sourceMappingURL=desktop.css.map */
