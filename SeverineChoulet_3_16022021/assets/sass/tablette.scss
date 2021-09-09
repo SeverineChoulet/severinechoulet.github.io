@@ -1,9 +1,14 @@
 /* feuille de style pour les tablettes */
 @media screen and (min-width: 426px){
+    /*Section fonctionnement */
+    
+    
     /* Restaurants */
     .grid1 {
         display: grid;
-        grid-template-rows: auto;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: auto 300px 300px;
+        justify-content: center;
         grid-template-areas:
             "header1 header1"
             "card1 card2"
@@ -22,6 +27,15 @@
         }
         .card4 {
             grid-area: card4;
+        }
+        a{
+            figure{
+                figcaption{
+                    i{
+                        left: 30rem;
+                    }
+                }
+            }
         }
     }
 }
