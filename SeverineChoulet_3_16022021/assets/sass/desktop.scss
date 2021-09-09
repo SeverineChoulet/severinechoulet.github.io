@@ -15,6 +15,7 @@
     /* Restaurants */
     .grid1 {
         display: grid;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
             "header1 header1 header1 header1"
